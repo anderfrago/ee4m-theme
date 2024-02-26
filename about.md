@@ -1,7 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+permalink: /about
+Focus Area:
+  title: "EE4M: About"
 ---
 
 ![ee4m-logo](/assets/images/ee4m-logo.png)

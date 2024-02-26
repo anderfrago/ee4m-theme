@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /about
+permalink: /about.html
 Focus Area:
   title: "EE4M: About"
 ---

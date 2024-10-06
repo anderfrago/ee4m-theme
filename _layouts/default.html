@@ -14,17 +14,43 @@
         <script>hljs.initHighlightingOnLoad();</script> -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-{{ content }}
 
-<div class="container-fluid bg-light">
-    <div class="container">
-        <footer class="footer fixed-bottom">
-            <div class="container">
-                <span class="text-muted">© 2024 {{ site.title }}</span>
+<body>
+
+    <div class="container-fluid bg-light">
+        <nav class="navbar navbar-light bg-light">
+            <div class="mx-auto">
+                <a class="navbar-brand" href="#"> <img src="{{ site.baseurl }}/assets/images/ee4m-logo.png" alt="Logo"
+                        style="width: 8rem; height: 5rem;" />
+                </a>               
             </div>
+        </nav>
+    </div>
+
+
+
+    <div class="container my-5">
+        <header class="my-5 mx-auto">
+            <h1 >EE4M: Engineering Excellence for the Mobility Value Chain</h1>
+            <div class="d-flex justify-content-center">
+                <a href="https://ee4m.eu" class="nav-link mx-5">About us</a>
+            </div>
+        </header>
+        <hr />
+        <main class="mx-auto">
+            <article class="mb-5 pb-3">
+                {{ content }}
+            </article>
+        </main>
+        <footer class="d-flex justify-content-start">
+            <img src="{{ site.baseurl }}/assets/images/eu-cofounded.png" alt="Logo"
+            style="width: 8rem; height: 5rem;" />            
         </footer>
     </div>
-</div>
+
+
+</body>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

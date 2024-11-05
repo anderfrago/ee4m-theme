@@ -1,1 +1,23 @@
-@import "bootstrap/bootstrap";
+@import "bootstrap.min.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+header,
+main,
+footer {
+  display: grid;
+  min-height: 10vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  background-color: #f8f9fa;
+}
+
+a {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #033136;
+  background-color: #f8f9fa;
+}

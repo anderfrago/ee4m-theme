@@ -34,8 +34,11 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            {% for item in site.data.samplelist[page.slug] %}
-                            <li><a class="nav-link" href="{{ item.permalink }}">{{ item.title }}</a></li>
+                            {% assign pages = site.pages | sort: 'title' %}
+                            {% for module in pages %}
+                            {% if module.layout == "page" %}
+                            <li><a class="nav-link" href="{{ module.permalink }}">{{ module.title }}</a></li>
+                            {% endif %}
                             {% endfor %}
 
                         </ul>

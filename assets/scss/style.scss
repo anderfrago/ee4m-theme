@@ -1,16 +1,35 @@
 @import "bootstrap.min.css";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+h1,
+h2,
+h3 {
+  color: #033136;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Roboto", serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 500 !important;
+  font-style: normal !important;
+  font-variation-settings: "wdth" 100 !important;
+}
 
 header,
-main,
-footer {
+main {
   display: grid;
   min-height: 10vh;
   grid-template-rows: auto 1fr auto;
 }
 
-header,
-footer {
+header {
   background-color: #f8f9fa;
 }
 
